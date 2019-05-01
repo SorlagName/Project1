@@ -2,8 +2,8 @@
     box-sizing: border-box;
     margin: 0;
 }
+// White part
 section{
-    height: 360px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -12,18 +12,18 @@ section{
 
     .container-top {
         width: 1170px;
-        height: 360px;
         display: flex;
         align-items: baseline;
         justify-content: flex-start;
         padding: 30px 0;
 
-
+// Switzerland / Canada / Follow us
         .box-top {
+            flex-direction: column;
             margin-top: 50px;
-            margin-right: 102px;
+            margin-right: 100px;
+            margin-bottom: 50px;
             line-height: 26px;
-
 
             h1 {
                 font-family: 'Poppins', sans-serif;
@@ -37,7 +37,7 @@ section{
                 color: grey;            
             }
 
-
+// Картинки phone & mail
             .fa-phone-square {
                 color: #dd4b39;
                 margin-right: 5px;
@@ -57,9 +57,9 @@ section{
             }
         }
 
-
+// Cоціальні мережі 1
         .box-top:nth-of-type(3) {
-            margin-left: 350px;
+            margin-left: auto;
         }
         .fa-facebook-square {
             color: #3b5998;
@@ -83,24 +83,77 @@ section{
             transform: scale(0.8, 0.8);
         }
     }
+    @media all and (min-width: 1200px){
+        section {
+            width: 100%;
+        }
+        .container-top {
+            width: 1170px;
+        }
+    }
+    @media all and (max-width: 1199px) and (min-width: 992px) {
+        section {
+            width: 90%;
+        }
+        .container-top {
+            width: 1100px;
+        }
+        .box-top {
+            margin-right: 20px;
+            margin-left: 8px;
+        }
+    }
+    @media all and (max-width: 991px) and (min-width: 768px) {
+        section {
+            width: 70%;
+        }
+        .container-top {
+            width: 800px;
+        }
+    }
+    @media all and (max-width: 767px) and (min-width: 526px) {
+        section {
+            width: 50%;
+        }
+        .container-top {
+            width: 678px;
+            flex-direction: column;
+        }
+        .box-top {
+            margin-left: 40px;
+        }
+    }
+    @media all and (max-width: 526px) and (min-width: 300px) {
+        section {
+            width: 20%;
+        }
+        .container-top {
+            width: 300px;
+            flex-direction: column;
+        }
+        .box-top {
+            margin-left: 40px;
+        }
+    }
 }
+
+// Black part
 footer {
     width: 100%;
-    height: 568px;
     background: #000;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 
 
     .container-footer {
         width: 1170px;
-        height: 568px;
+        min-height: 528px;
         display: flex;
         align-items: baseline;
         justify-content: space-between;
 
-
+// Сont.Inf. / Navigation / Services / Newsletter
         .box-bottom {
             line-height: 35px;
             display: flex;
@@ -145,7 +198,7 @@ footer {
                 margin-bottom: 3px; 
             
             }
-
+            // Стилізація ссилок
             .link {
                 text-decoration: none;
                 color: grey;
@@ -168,6 +221,8 @@ footer {
                 color: rgb(58, 177, 2);
                 text-decoration: underline;
             }
+
+            // Форма email
             .footer-form {
                 border: none;
                 background: #252525;
@@ -175,12 +230,14 @@ footer {
                 height: 50px;
                 padding-left: 45px;
             }
+            // Картинка email
             .fa-envelope {
                 color: rgb(58, 177, 2);
                 position: absolute;
                 transform: translate(17px, 17px);
                 z-index: 2; 
             }
+            // Кнопка Підтвердити
             .btn-subscribe {
                 width: 100px;
                 height: 50px;
@@ -193,6 +250,7 @@ footer {
             .btn-subscribe:active {
                 transform: scale(0.8, 0.8);
             }
+            // Соціальні мережі 2
             .social {
                 .fa-facebook-square {
                     color: #3b5998;
@@ -220,20 +278,69 @@ footer {
                 }
             }
         }
-        .bottom-line {
-            position: absolute;
-            width: 1170px;
-            height: 5px;
-            border-top: 1px solid gray;
-            transform: translate(1px, 480px);
-            p {
-                font-family: 'Poppins', sans-serif;
-                font-size: 14px;
-                padding-left: 39%;
-                font-weight: 400;
-                margin: 20px 0;
-                color: grey;            
-            }
+    }
+    // Лінія внизу
+    .bottom-line {
+        padding-bottom: 62px;
+        width: 100%;
+        height: 5px;
+        border-top: 1px solid gray;
+        // Надпис внизу
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            padding-left: 39%;
+            font-weight: 400;
+            margin: 20px 0;
+            color: grey;            
         }
     }
+    @media all and (min-width: 1200px){
+        footer {
+            width: 100%;
+        }
+        .container-footer {
+            width: 1170px;
+        }
+    }
+    @media all and (max-width: 1199px) and (min-width: 992px) {
+        footer {
+            width: 90%;
+        }
+        .container-footer {
+            width: 1050px;
+        }
+        .box-bottom {
+            margin-right: 20px;
+            margin-left: 8px;
+        }
+    }
+    @media all and (max-width: 991px) and (min-width: 768px) {
+        footer {
+            width: 70%;
+        }
+        .container-footer {
+            width: 900px;
+        }
+    }
+    @media all and (max-width: 767px) and (min-width: 526px) {
+        footer {
+            width: 50%;
+        }
+        .container-footer {
+            width: 600px;
+            flex-direction: column;
+            padding-left: 60px;
+        }
+    }
+    @media all and (max-width: 526px) and (min-width: 300px) {
+        footer {
+            width: 20%;
+        }
+        .container-footer {
+            width: 300px;
+            flex-direction: column;
+            padding-left: 60px;
+        }
+    }  
 }
