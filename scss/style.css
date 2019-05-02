@@ -1,7 +1,301 @@
 * {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
   margin: 0; }
 
+header {
+  width: 100%;
+  height: 90px;
+  padding: 15px 0; }
+
+header .container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.log1 {
+  width: 200px;
+  height: 27px; }
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+  .nav-link li {
+    margin: 15px; }
+  .nav-link li a {
+    font-size: 15pt;
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins";
+    font-weight: 500; }
+  .nav-link li a:hover {
+    color: red; }
+  .nav-link .link1 {
+    color: red; }
+
+.phone-header {
+  display: flex;
+  text-align: center; }
+  .phone-header img {
+    margin: 5px; }
+  .phone-header span {
+    margin: 5px; }
+  .phone-header span a {
+    text-decoration: none;
+    color: #000; }
+
+@media all and (min-width: 1200px) {
+  header {
+    width: 100%; }
+
+  header .container {
+    width: 1170px; } }
+@media all and (max-width: 1199px) and (min-width: 992px) {
+  header {
+    width: 90%; }
+
+  header .container {
+    width: 1100px; } }
+@media all and (max-width: 991px) and (min-width: 768px) {
+  header {
+    width: 70%; }
+
+  header .container {
+    width: 800px;
+    flex-wrap: wrap;
+    flex-direction: column; } }
+@media all and (max-width: 767px) and (min-width: 526px) {
+  header {
+    width: 50%; }
+
+  header .container {
+    width: 678px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 50px; }
+
+  .nav-link {
+    flex-wrap: wrap;
+    flex-direction: column; } }
+@media all and (max-width: 526px) and (min-width: 300px) {
+  header {
+    width: 20%; }
+
+  header .container {
+    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 50px; }
+
+  .nav-link {
+    flex-wrap: wrap;
+    flex-direction: column; } }
+article {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.banner {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  background-image: url("../img/pic1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.frase {
+  width: 1170px;
+  margin: 0 auto;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 52pt;
+  color: white; }
+
+@media all and (min-width: 1200px) {
+  article {
+    width: 100%; } }
+@media all and (max-width: 1199px) and (min-width: 992px) {
+  article {
+    width: 90%;
+    margin-top: 100px; } }
+@media all and (max-width: 991px) and (min-width: 768px) {
+  article {
+    width: 70%;
+    margin-top: 100px; } }
+@media all and (max-width: 767px) and (min-width: 526px) {
+  article {
+    width: 50%;
+    margin-top: 380px; } }
+@media all and (max-width: 526px) and (min-width: 300px) {
+  article {
+    width: 20%;
+    margin-top: 380px; } }
+.inner {
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .inner .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .inner .block input {
+    width: 165px;
+    height: 46px;
+    background: #65b72f;
+    border-radius: 4px;
+    color: white; }
+
+input {
+  height: 50px;
+  width: 570px;
+  margin-bottom: 15px;
+  text-align: left;
+  padding-left: 40px; }
+
+.user {
+  background-image: url("../img/__text area.png");
+  background-position: 7px;
+  background-repeat: no-repeat;
+  border: 1px solid gray; }
+
+.mobile {
+  background-image: url("../img/__text area2.png");
+  background-position: 10px;
+  background-repeat: no-repeat;
+  border: 1px solid gray; }
+
+.email {
+  background-image: url("../img/__text area3.png");
+  background-position: 8px;
+  background-repeat: no-repeat;
+  border: 1px solid gray; }
+
+select {
+  height: 50px;
+  width: 570px;
+  margin-bottom: 15px;
+  text-align: left;
+  padding-left: 40px;
+  background-image: url("../img/__text area4.png");
+  background-position: 9px;
+  background-repeat: no-repeat;
+  border: 1px solid gray; }
+
+textarea {
+  width: 570px;
+  height: 217px;
+  padding-left: 40px;
+  background-image: url("../img/__text area5.png");
+  background-position: left top t;
+  background-repeat: no-repeat;
+  border: 1px solid gray; }
+
+.map {
+  width: 570px;
+  height: 522px;
+  position: relative;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media all and (min-width: 1200px) {
+  .inner {
+    width: 1170px; } }
+@media all and (max-width: 1199px) and (min-width: 992px) {
+  .inner {
+    width: 1100px; } }
+@media all and (max-width: 991px) and (min-width: 768px) {
+  .inner {
+    width: 887px; } }
+@media all and (max-width: 767px) and (min-width: 526px) {
+  .inner {
+    width: 661px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    flex-direction: column; }
+
+  .box {
+    width: 500px; }
+
+  select {
+    width: 500px; }
+
+  textarea {
+    width: 500px; }
+
+  .map {
+    width: 500px; } }
+@media all and (max-width: 526px) and (min-width: 300px) {
+  .inner {
+    width: 460px;
+    flex-wrap: wrap;
+    flex-direction: column; }
+
+  .box {
+    width: 250px; }
+
+  select {
+    width: 250px; }
+
+  textarea {
+    width: 250px; }
+
+  .map {
+    width: 100%; } }
+.place {
+  margin-top: 100px;
+  width: 100%;
+  height: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/6.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .place .parag {
+    font-family: "Poppins";
+    font-size: 15pt;
+    font-weight: medium;
+    color: white; }
+  .place a {
+    font-family: "Poppins";
+    font-size: 56pt;
+    font-weight: medium;
+    color: white; }
+
+@media all and (min-width: 1200px) {
+  .place {
+    width: 100%; } }
+@media all and (max-width: 1199px) and (min-width: 992px) {
+  .place {
+    width: 90%; } }
+@media all and (max-width: 991px) and (min-width: 768px) {
+  .place {
+    width: 70%; } }
+@media all and (max-width: 767px) and (min-width: 526px) {
+  .place {
+    width: 50%;
+    flex-wrap: wrap;
+    flex-direction: column; } }
+@media all and (max-width: 526px) and (min-width: 300px) {
+  .place a {
+    width: 50%;
+    font-size: 33px;
+    margin-right: 172px; } }
 section {
   width: 100%;
   display: flex;
@@ -168,7 +462,7 @@ footer {
         transform: translate(17px, 17px);
         z-index: 2; }
       footer .container-footer .box-bottom .btn-subscribe {
-        width: 100px;
+        width: 145px;
         height: 50px;
         border: none;
         background: #3ab102; }
